@@ -49,7 +49,10 @@ def get_rank(xp):
     for name, threshold in reversed(ranks):
         if xp >= threshold:
             return name
-    return "Unranked"
+        else:
+            return "unranked"
+        
+    
 
 class XPTrackerApp:
     def __init__(self, root):
