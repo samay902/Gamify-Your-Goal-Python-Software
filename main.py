@@ -13,26 +13,26 @@ ranks = [
 
 roadmap = {
     "🔥 Phase 1: Core Fundamentals": [
-        ("Setup NestJS Project", "Bronze"),
-        ("Understand Modules & Providers", "Bronze"),
-        ("Implement Dependency Injection", "Silver"),
-        ("Apply Validation & Pipes", "Silver"),
+        ("Setup NestJS Project", "Bronze dihadi"),
+        ("Understand Modules & Providers", "Bronze dihadi"),
+        ("Implement Dependency Injection", "Silver dihadi"),
+        ("Apply Validation & Pipes", "Silver dihadi"),
     ],
     "⚙️ Phase 2: Auth & DB": [
-        ("Implement JWT Auth", "Gold"),
-        ("Add Refresh Token Flow", "Platinum"),
-        ("Connect to SQL DB with TypeORM", "Bronze"),
+        ("Implement JWT Auth", "Gold dihadi"),
+        ("Add Refresh Token Flow", "Platinum dihadi"),
+        ("Connect to SQL DB with TypeORM", "Bronze dihadi"),
     ],
     "🌟 Bonus Achievements": [
-        ("Complete All Tasks", "Legend"),
-        ("Deploy Real App", "Infinite")
+        ("Complete All Tasks", "Legend dihadi"),
+        ("Deploy Real App", "bihari topper level dihadi")
     ]
 }
 
 xp_per_rank = {
-    "Unranked": 0, "Bronze": 100, "Silver": 300, "Gold": 600,
-    "Platinum": 1000, "Diamond": 1500, "Master": 2100,
-    "Grandmaster": 2800, "Legend": 3600, "Infinite": 5000
+    "Unranked": 0, "c_paglu": 100, "Silver dihadi": 300, "Gold dihadi": 600,
+    "Platinum dihadi": 1000, "Diamond dihadi": 1500, "Master dihadi": 2100,
+    "Grandmaster dihadi": 2800, "Legend dihadi": 3600, "bihari topper level dihadi": 5000
 }
 
 def load_data():
@@ -50,14 +50,14 @@ def get_rank(xp):
         if xp >= threshold:
             return name
         else:
-            return "unranked"
+            return "kam karle ladle"
         
     
 
 class XPTrackerApp:
     def __init__(self, root):
         self.root = root
-        self.root.title("🔥 NestJS XP Quest Tracker")
+        self.root.title("NestJS XP Quest Tracker")
         self.root.geometry("600x700")
         self.root.configure(bg="#1c1c1e")
 
