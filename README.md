@@ -1,6 +1,7 @@
 This is a custom made python-gui Gamification software.
 
 This software will help you gamify your life like you play games and achieve ranks!
+vibe coder hey @basanta
 
 This got some bugs which has to be fixed.
 
