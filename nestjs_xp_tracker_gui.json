@@ -1,4 +1,9 @@
 {
-  "xp": 0,
-  "completed": []
+  "xp": 800,
+  "completed": [
+    "Setup NestJS Project",
+    "Understand Modules & Providers",
+    "Implement Dependency Injection",
+    "Apply Validation & Pipes"
+  ]
 }

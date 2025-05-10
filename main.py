@@ -5,11 +5,11 @@ from tkinter import ttk
 
 DATA_FILE = "nestjs_xp_tracker_gui.json"
 
-ranks = [
-    ("Unranked", 0), ("Bronze", 100), ("Silver", 300), ("Gold", 600),
-    ("Platinum", 1000), ("Diamond", 1500), ("Master", 2100),
-    ("Grandmaster", 2800), ("Legend", 3600), ("Infinite", 5000)
-]
+ranks = {
+    "Unranked": 0, "Bronze dihadi": 100, "Silver dihadi": 300, "Gold dihadi": 600,
+    "Platinum dihadi": 1000, "Diamond dihadi": 1500, "Master dihadi": 2100,
+    "Grandmaster dihadi": 2800, "Legend dihadi": 3600, "bihari topper level dihadi": 5000
+}
 
 roadmap = {
     "🔥 Phase 1: Core Fundamentals": [
@@ -25,12 +25,13 @@ roadmap = {
     ],
     "🌟 Bonus Achievements": [
         ("Complete All Tasks", "Legend dihadi"),
+
         ("Deploy Real App", "bihari topper level dihadi")
     ]
 }
 
 xp_per_rank = {
-    "Unranked": 0, "c_paglu": 100, "Silver dihadi": 300, "Gold dihadi": 600,
+    "Unranked": 0, "Bronze dihadi": 100, "Silver dihadi": 300, "Gold dihadi": 600,
     "Platinum dihadi": 1000, "Diamond dihadi": 1500, "Master dihadi": 2100,
     "Grandmaster dihadi": 2800, "Legend dihadi": 3600, "bihari topper level dihadi": 5000
 }
@@ -46,11 +47,11 @@ def save_data(data):
         json.dump(data, f, indent=2)
 
 def get_rank(xp):
-    for name, threshold in reversed(ranks):
-        if xp >= threshold:
+    for name in (ranks):
+        
             return name
-        else:
-            return "kam karle ladle"
+        
+    
         
     
 
